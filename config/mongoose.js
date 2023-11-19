@@ -1,9 +1,14 @@
 // requiring the library
 const mongoose = require("mongoose");
 
+mongoose.set("strictQuery", true);
+
 //connecting to the database
 mongoose.connect(
-  "mongodb+srv://nazimnn459:OmO9gknXwYO54IA6@cluster0.iz9lwls.mongodb.net/"
+  "mongodb+srv://raisanjeet8896:sanMo6204@cluster0.pbwejj7.mongodb.net/?retryWrites=true&w=majority",{
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+}
 );
 
 // acquiring the connection to check if it is succesfull
